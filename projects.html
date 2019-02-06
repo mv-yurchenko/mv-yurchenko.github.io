@@ -26,54 +26,26 @@
     <link rel="apple-touch-icon-precomposed" sizes="114x114" href="images/ico/apple-touch-icon-114-precomposed.png">
     <link rel="apple-touch-icon-precomposed" sizes="72x72" href="images/ico/apple-touch-icon-72-precomposed.png">
     <link rel="apple-touch-icon-precomposed" href="images/ico/apple-touch-icon-57-precomposed.png">
+
+    <script src="js/jquery.js"></script> 
+    <script> 
+    $(function(){
+      $("#popular_projects_content").load("popular_projects.html"); 
+      $("#nav_header").load("navigation.html");
+    });
+    </script>
+
+    <!--Icons download-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
 </head>
 <!--/head-->
 
 <body class ="homepage">
- <nav class="navbar navbar-inverse" role="banner">
-            <div class="container">
-                <div class="navbar-header">
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                        <span class="sr-only">Toggle navigation</span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                        <span class="icon-bar"></span>
-                    </button>
-                </div>
 
-                <div class="collapse navbar-collapse navbar-right">
-                    <ul class="nav navbar-nav">
-                        <li class="active"><a href="index.html">Home</a></li>
-                        <li><a href="404.html">About Me</a></li>
-                        <li><a href="projects.html">My Projects</a></li>
-                    </ul>
-                </div>
-            </div>
-            <!--/.container-->
-        </nav>
-        <!--/nav-->
-
-<div class="row_popular_projects">
-    <div class="col-sm-offset-3 fadeInDown">
-        <p> <h2>Popular Projects</h2> </p>
-      <table class="table table-condensed">
-            <thead>
-                <tr>
-                    <th width="15%">Title</th>
-                    <th width="65%">Description</th>
-                    <th width="20%">Language</th>
-                </tr>
-            </thead>
-            <tbody>
-                <tr>
-                    <td>Chat Server</td>
-                    <td>Simple Server and Client. Unlimited count of users. Strong encrypting</td>
-                    <td>Python</td>
-                </tr>
-            </tbody>
-        </table>
-    </div>
-</div>
+    <div id="nav_header"></div>
+    <div id="popular_projects_content"></div>
+    
 
      <section id="my_skills">
         <div class="container">
@@ -121,6 +93,7 @@
                             </div>
                             <div class = "sd-skills">
                             <h2>Software Development</h2>
+                                <h3>Python, Java, C++</h3>
                             <ul>
                                 <li>Python/C++ Automation</li>
                                 <li>Java simple applications</li>
@@ -136,6 +109,7 @@
                                 <i class="	fa fa-line-chart"></i>
                             </div>
                             <h2>Machine Learning</h2>
+                            <h3>LightGBM, XGBoost</h3>
                             <ul>
                                 <li>Data Analysis with Pandas</li>
                                 <li>Data Visualisation with matplotlib</li>
