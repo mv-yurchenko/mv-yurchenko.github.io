@@ -103,7 +103,6 @@ a:focus {
 
 .center h2 {
     font-size: 40px;
-    margin-top: 20;
     margin-bottom: 40px;
 }
 
@@ -311,10 +310,10 @@ input.search-form:hover {
 .navbar-inverse .navbar-nav>.active>a:focus,
 .navbar-inverse .navbar-nav>.open>a,
 .navbar-inverse .navbar-nav>.open>a:hover,
-.navbar-inverse .navbar-nav>.open>a:focus {
-    background-color: #EC5538;
-    color: #fff;
-}
+/*.navbar-inverse .navbar-nav>.open>a:focus {*/
+    /*background-color: #EC5538;*/
+    /*color: #fff;*/
+/*}*/
 
 .navbar-inverse .navbar-nav .dropdown-menu {
     background-color: rgba(0, 0, 0, .85);
